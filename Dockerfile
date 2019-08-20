@@ -1,9 +1,6 @@
 FROM python:3-onbuild
 
 MAINTAINER Soham Dutta
-
-ADD . /code
-RUN pip install -r /code/Requirements.txt
+RUN git clone https://github.com/NP-compete/Job-Test-Repo.git /code
 WORKDIR /code
-
 CMD python main.py

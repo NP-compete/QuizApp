@@ -8,7 +8,8 @@ if __name__ == '__main__':
     quiz_data = pj.parseNformat_json(QUIZ_FILE)
     # User option for category
     print("Choose Group: Sport, Maths : ", end="")
-    group = input().lower()
+    group = input()
+    group = group.lower()
     # Removing Human intervention error
     if group == "math":
         group = "maths"
